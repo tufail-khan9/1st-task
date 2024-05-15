@@ -4,13 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=people, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 50%;
+        
+      }
+      
+      td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 15px;
+        
+        
+        
+      }
+      
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+    
 </head>
 <body>
-    <h3>Table of Products</h3>
+    
     <p>here some product listed in table formate and there prices and quantity 
         also mentioned
     </p>
     <table>
+        <caption>Table of Products</caption>
+
         <thead>
             <tr>
                 <th>Product</th>
@@ -35,12 +59,12 @@
                 <td>2 bottle</td>
             </tr>
         </tbody>
-    </table>
-    <h3>Table of Employees</h3>
-    <p>here some Employees listed in table formate and there Designation and salaries 
-        also mentioned
-    </p>
+    </table>   
     <table>
+        <p>here some Employees listed in table formate and there Designation and salaries 
+            also mentioned
+        </p>
+        <caption>Table of Employees</caption> 
         <thead>
             <tr>
                 <th>Employee Name</th>
