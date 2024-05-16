@@ -1,36 +1,53 @@
 .start {
     background: #d0d0d0;
-    padding: 1%;
+    
   }
   .start:after {
     content: '';
     display: block;
-    clear: both;
+    clear: both;   
   }
+  
   .el {
     float: left;
-    margin: 1%;
+    margin: 1%; 
   }
   .el1 {
     width: 31.33%;
-    padding-bottom: 31.33%;
+    padding-bottom: 33.33%; 
     background: #FF7676;
+    text-align: center;
+    padding: 194px 0;
+    font-weight: bolder;
+     font-size: 3vw;
   }
   .el2 {
     float: right;
     width: 64.66%;
     padding-bottom: 14.66%;
     background: #C2FF76;
+    text-align: center;
+    padding: 70px 0;
+    font-weight: bolder;
+    font-size: 3vw;
   }
   .el3 {
     width: 31.33%;
     padding-bottom: 14.66%;
     background: #FF9BF7;
+    text-align: center;
+    padding: 89px 0;
+    font-weight: bolder;
+    font-size: 3vw;
   }
   .el4 {
     width: 31.33%;
-    padding-bottom: 6.33%;
+    padding-bottom: 5.33%;
     background: #9BA4FF;
+    text-align: center;
+    padding: 27px 0;
+    font-weight: bolder;
+    font-size: 3vw;
   }
   @media (max-width: 414px) {
     .el2, .el4 {
