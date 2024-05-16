@@ -1,0 +1,44 @@
+.start {
+    background: #d0d0d0;
+    padding: 1%;
+  }
+  .start:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  .el {
+    float: left;
+    margin: 1%;
+  }
+  .el1 {
+    width: 31.33%;
+    padding-bottom: 31.33%;
+    background: #FF7676;
+  }
+  .el2 {
+    float: right;
+    width: 64.66%;
+    padding-bottom: 14.66%;
+    background: #C2FF76;
+  }
+  .el3 {
+    width: 31.33%;
+    padding-bottom: 14.66%;
+    background: #FF9BF7;
+  }
+  .el4 {
+    width: 31.33%;
+    padding-bottom: 6.33%;
+    background: #9BA4FF;
+  }
+  @media (max-width: 414px) {
+    .el2, .el4 {
+      width: 98%;
+      padding-bottom: 31.33%;
+    }
+    .el1, .el3 {
+      width: 48%;
+      padding-bottom: 48%;
+    }
+  }
