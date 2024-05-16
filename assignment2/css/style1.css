@@ -1,58 +1,77 @@
 /* Basic CSS Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Navbar Styles */
-  .navbar {
-    background-color: #333;
-  color: #fff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #a6c3fd;
+  color: #080101;
   padding: 10px 0;
-  /*position: fixed;*/
-  position:absolute;
+  /* position: fixed; */
   width: 100%;
   top: 0;
-  }
-  
-  .container1 {
-    width: 80%;
-    margin: auto;
-    padding-top: 30px;
-    
-  }
-  .container {
-    width: 80%;
-    margin: auto;
-    padding-top: 60px;
-  }
-  
-  .nav-menu {
-    list-style: none;
+}
+
+.container1,
+.container {
+  width: 80%;
+  margin: auto;
+  padding-top: 60px; /* Adjusted padding for container */
+}
+
+.nav-menu {
+  list-style: none;
   display: flex;
+  justify-content: center; /* Centering the menu items */
+}
+
+.nav-menu li {
+  margin-right: 20px;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Section Styles */
+.section {
+  padding: 100px 0; /* Adjusted padding for sections */
+  text-align: center;
+}
+
+.section h2 {
+  margin-bottom: 4vw;
+}
+
+.section p {
+  font-size: 2vw;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 750px) {
+  .container1,
+  .container {
+      width: 100%; /* Adjusted width for smaller screens */
+      padding-top: 40px; /* Adjusted padding for smaller screens */
   }
-  
+
+  .nav-menu {
+      flex-direction: column; /* Align menu items vertically */
+  }
+
   .nav-menu li {
-    margin-right: 20px;
+      margin-right: 0; /* Remove margin between menu items */
+      margin-bottom: 10px; /* Add some space between menu items */
   }
-  
-  .nav-menu li a {
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  /* Section Styles */
+
   .section {
-    padding: 150px 0;
-    text-align: center;
+      padding: 80px 0; /* Adjusted padding for smaller screens */
   }
-  
-  .section h2 {
-    margin-bottom: 20px;
-  }
-  
   .section p {
-    font-size: 18px;
+    font-size: 4vw;
   }
-  
+}
