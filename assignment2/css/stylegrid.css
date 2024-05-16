@@ -1,0 +1,50 @@
+.grid-container {
+    display: grid;
+    column-gap: 8px;
+    grid-template-columns: auto auto auto;
+    background-color: #b6d7f2;
+    padding: 6px 6px;
+  }
+  
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+
+  .grid-container1 {
+    display: grid;
+    column-gap: 8px;
+    grid-template-columns: auto auto auto;
+    background-color: #b6d7f2;
+    padding: 6px 6px;
+  }
+  
+  .grid-item1 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .grid-item1:nth-child(2) {
+    grid-column: span 2;
+}
+
+/* Spanning the first item of column 3 */
+.grid-item1:nth-child(3) {
+    grid-column: span 2;
+}
+  /*.grid-item1:nth-child(2)
+  {
+    grid-column: 2/4;
+  }
+  .grid-item1:nth-child(3)
+  {
+    grid-column: 3/5;
+  }*/
+  
+  
